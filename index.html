@@ -113,6 +113,7 @@
         .hero-btns {
             display: flex;
             gap: 12px;
+            flex-wrap: wrap;
         }
 
         .btn {
@@ -164,6 +165,9 @@
         .bottom-bar .btn {
             flex: 1;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            padding: 0 10px;
+            font-size: 13px;
+            white-space: nowrap;
         }
 
         /* Sections */
@@ -393,9 +397,10 @@
     </div>
 
     <div class="bottom-bar">
+        <a href="https://linkedin.com/in/ayushpallod/" class="btn btn-secondary" target="_blank">Connect ↗</a>
         <a href="https://ayushpallod.github.io/portfolio/assets/Ayush_Pallod_MLOps_Engineer_Resume.pdf"
-            class="btn btn-secondary" download>Download Resume ⬇️</a>
-        <button onclick="downloadVCard()" class="btn btn-primary">Save Contact</button>
+            class="btn btn-primary" download>Resume ⬇️</a>
+        <button onclick="downloadVCard()" class="btn btn-secondary">Save Contact</button>
     </div>
 
     <div class="container">
@@ -545,7 +550,7 @@
 
         <footer style="text-align: center; margin-top: 20px; border-top: 1px solid var(--border); padding-top: 32px;">
             <p class="mono" style="font-size: 13px; color: var(--text-dim); margin-bottom: 8px;">./ayush-pallod
-                --summit=2026</p>
+                --India AI Impact Summit=2026</p>
         </footer>
     </div>
 
