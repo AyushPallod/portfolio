@@ -1356,11 +1356,6 @@
                     LinkedIn</a>
             </div>
         </div>
-
-        <!-- <div class="hero-scroll-hint">
-            <span>scroll</span>
-            <div class="scroll-line"></div>
-        </div> -->
     </section>
 
     <!-- ═══════════ METRICS ═══════════ -->
@@ -1379,8 +1374,8 @@
                 <div class="metric-label">JIT Quant Speedup</div>
             </div>
             <div class="metric-item">
-                <div class="metric-value">&lt;2ms</div>
-                <div class="metric-label">Edge Anomaly Screening</div>
+                <div class="metric-value">9-Service</div>
+                <div class="metric-label">RAG Microservice Architecture</div>
             </div>
         </div>
     </div>
@@ -1407,8 +1402,7 @@
                         that actually backtest profitably.
                     </p>
                     <p>
-                        My thesis is <strong>under publication</strong>. My VLM research <strong>halved hallucination
-                            rates</strong>.
+                        My VLM research <strong>halved hallucination rates</strong>.
                         My hackathon project <strong>won first place</strong>.
                         My stochastic finance platform is <strong>live in production</strong>.
                         I don't do toy projects.
@@ -1520,37 +1514,21 @@
                     <div class="project-card-inner">
                         <div class="project-badge-row">
                             <span class="project-badge badge-thesis">🔬 M.Tech Thesis</span>
-                            <span class="project-badge badge-thesis">Under Publication</span>
+                            <span class="project-badge badge-thesis">Ongoing Research</span>
                         </div>
-                        <h3 class="project-title">EDSR: Extreme Domain Shift Resilience</h3>
-                        <p class="project-subtitle">Causality-Guided Zero-Shot Anomaly Detection · IIIT Allahabad</p>
+                        <h3 class="project-title">Zero-Shot Anomaly Detection for Multivariate Time Series</h3>
+                        <p class="project-subtitle">Causality-Guided Framework · IIIT Allahabad</p>
                         <p class="project-desc">
-                            Novel hierarchical causality-guided framework for zero-shot multivariate time-series anomaly
-                            detection, resilient to 100× extreme magnitude domain shifts in safety-critical deployments.
+                            M.Tech thesis research on a causality-guided deep learning framework for zero-shot
+                            anomaly detection in multivariate time series, targeting resilience to extreme domain
+                            shifts in safety-critical deployments.
                         </p>
-                        <ul class="project-highlights">
-                            <li>Integrates Neural ODE causal discovery (CUTS+), contrastive encoding, gated
-                                spatio-temporal
-                                attention (FAM), WGAN-GP adversarial manifold alignment, and memory-based edge screening
-                                (AdaMemBLS)</li>
-                            <li>Outperformed SOTA baselines — CAROTS by 186% on VAR-100 & 341% on Lorenz-96; achieved
-                                100% F1
-                                on 40% of real-world NASA (SMAP, MSL) & industrial server (SMD) entities with AUROC up
-                                to 0.99</li>
-                            <li>Sub-2ms memory-based edge screening clearing 85% of normal data locally; end-to-end
-                                cloud
-                                validation latency &lt;26ms for real-time edge deployment</li>
-                        </ul>
                         <div class="project-tech">
                             <span class="tech-pill">Causal ML</span>
-                            <span class="tech-pill">Neural ODE</span>
                             <span class="tech-pill">Zero-Shot AD</span>
-                            <span class="tech-pill">WGAN-GP</span>
+                            <span class="tech-pill">Time Series</span>
                             <span class="tech-pill">Edge AI</span>
                             <span class="tech-pill">PyTorch</span>
-                        </div>
-                        <div class="project-links">
-                            <span class="project-link project-link-paper">📄 Paper Under Publication</span>
                         </div>
                     </div>
                 </div>
@@ -1563,35 +1541,20 @@
                             <span class="project-badge badge-ai">VLM / Multimodal</span>
                         </div>
                         <h3 class="project-title">VLM Anti-Hallucination via Attention-Grounding Regularization</h3>
-                        <p class="project-subtitle">Qwen2-VL + GroundingDINO + SAM · TAM-Validated Training · IIIT
-                            Allahabad</p>
+                        <p class="project-subtitle">Qwen2-VL + GroundingDINO + SAM · IIIT Allahabad</p>
                         <p class="project-desc">
-                            Novel attention-based grounding regularization loss that penalizes Vision-Language Models
-                            when they generate tokens without visual evidence — directly tackling the object
-                            hallucination problem in multimodal LLMs.
+                            Research on attention-based grounding regularization to reduce object hallucination
+                            in Vision-Language Models. Fine-tuned Qwen2-VL-2B with LoRA using a joint loss
+                            combining standard cross-entropy with a custom grounding regularization term,
+                            significantly improving POPE precision and reducing CHAIR hallucination instances.
                         </p>
-                        <ul class="project-highlights">
-                            <li>Designed automated pseudo-grounding pipeline using GroundingDINO + SAM (ViT-B) to
-                                generate pixel-level masks for 2,979 COCO images without manual annotation</li>
-                            <li>Fine-tuned Qwen2-VL-2B with LoRA (r=16) using a joint loss — standard LM cross-entropy
-                                + λ·attention-grounding BCE/Focal loss — forcing the model to "look" at correct pixels
-                            </li>
-                            <li>Achieved POPE precision 75.18% → 96.61% (+21.4pp) with Focal Loss; halved CHAIR
-                                hallucination instances (209 → 110) with BCE; recovered TAM-IoU from 0.0000 → 0.0135
-                            </li>
-                        </ul>
                         <div class="project-tech">
                             <span class="tech-pill">Qwen2-VL</span>
                             <span class="tech-pill">GroundingDINO</span>
                             <span class="tech-pill">SAM</span>
                             <span class="tech-pill">LoRA / PEFT</span>
-                            <span class="tech-pill">Focal Loss</span>
-                            <span class="tech-pill">TAM</span>
                             <span class="tech-pill">PyTorch</span>
                             <span class="tech-pill">NVIDIA L4</span>
-                        </div>
-                        <div class="project-links">
-                            <span class="project-link project-link-paper">📄 Paper Under Publication</span>
                         </div>
                     </div>
                 </div>
@@ -1639,7 +1602,7 @@
                     </div>
                 </div>
 
-                <!-- 3. Stochastic Finance -->
+                <!-- 4. Stochastic Finance -->
                 <div class="project-card reveal" data-category="quant ai-mlops">
                     <div class="project-card-inner">
                         <div class="project-badge-row">
@@ -1675,8 +1638,8 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- 4. AI Multi-Agent Stock Analyst Bot -->
+
+                <!-- 5. AI Multi-Agent Stock Analyst Bot -->
                 <div class="project-card reveal" data-category="ai-mlops quant">
                     <div class="project-card-inner">
                         <div class="project-badge-row">
@@ -1712,8 +1675,7 @@
                     </div>
                 </div>
 
-
-                <!-- 5. LLaMA Fine-Tuning -->
+                <!-- 6. LLaMA Fine-Tuning -->
                 <div class="project-card reveal" data-category="ai-mlops quant">
                     <div class="project-card-inner">
                         <div class="project-badge-row">
@@ -1750,7 +1712,7 @@
                     </div>
                 </div>
 
-                <!-- 6. BTC Hackathon Winner -->
+                <!-- 7. BTC Hackathon Winner -->
                 <div class="project-card reveal" data-category="quant research">
                     <div class="project-card-inner">
                         <div class="project-badge-row">
@@ -1783,7 +1745,7 @@
                     </div>
                 </div>
 
-                <!-- 7. GST B2B -->
+                <!-- 8. GST B2B -->
                 <div class="project-card reveal" data-category="quant">
                     <div class="project-card-inner">
                         <div class="project-badge-row">
@@ -1815,7 +1777,7 @@
                     </div>
                 </div>
 
-                <!-- 8. Brain Tumor Segmentation -->
+                <!-- 9. Brain Tumor Segmentation -->
                 <div class="project-card reveal" data-category="research ai-mlops">
                     <div class="project-card-inner">
                         <div class="project-badge-row">
