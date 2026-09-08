@@ -1405,6 +1405,7 @@
                         My VLM research <strong>halved hallucination rates</strong>.
                         My hackathon project <strong>won first place</strong>.
                         My stochastic finance platform is <strong>live in production</strong>.
+                        My PharmaBridge platform ships <strong>autonomous agent-to-agent B2B commerce</strong> — a clinic AI buyer that detects shortages, substitutes drugs by active ingredient, and pays, with zero human clicks.
                         I don't do toy projects.
                     </p>
                 </div>
@@ -1456,6 +1457,7 @@
                         <span class="skill-tag">Unsloth</span>
                         <span class="skill-tag">scikit-learn</span>
                         <span class="skill-tag">XGBoost</span>
+                        <span class="skill-tag">Groq API</span>
                         <span class="skill-tag">NLTK</span>
                     </div>
                 </div>
@@ -1486,6 +1488,8 @@
                         <span class="skill-tag">Qdrant</span>
                         <span class="skill-tag">Ollama</span>
                         <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">SQLAlchemy</span>
+                        <span class="skill-tag">Razorpay SDK</span>
                         <span class="skill-tag">Linux</span>
                     </div>
                 </div>
@@ -1501,7 +1505,7 @@
             <p class="section-subtitle reveal">Every project is a deployable system — not a Jupyter notebook.</p>
 
             <div class="project-filters reveal">
-                <button class="filter-btn active" onclick="filterProjects('all')">All (9)</button>
+                <button class="filter-btn active" onclick="filterProjects('all')">All (10)</button>
                 <button class="filter-btn" onclick="filterProjects('ai-mlops')">AI & MLOps</button>
                 <button class="filter-btn" onclick="filterProjects('quant')">Quantitative</button>
                 <button class="filter-btn" onclick="filterProjects('research')">Research & Awards</button>
@@ -1509,7 +1513,48 @@
 
             <div class="projects-grid">
 
-                <!-- 1. EDSR Thesis -->
+                <!-- 1. PharmaBridge -->
+                <div class="project-card reveal" data-category="ai-mlops">
+                    <div class="project-card-inner">
+                        <div class="project-badge-row">
+                            <span class="project-badge badge-ai">🤖 Agentic Commerce</span>
+                            <span class="project-badge badge-ai">Live Demo</span>
+                        </div>
+                        <h3 class="project-title">PharmaBridge — AI-Powered B2B Pharma Commerce</h3>
+                        <p class="project-subtitle">Dual-Mode: Human Chat Checkout + Autonomous Agent-to-Agent Procurement</p>
+                        <p class="project-desc">
+                            A production B2B pharmaceutical procurement platform with two modes on the same backend:
+                            a human retailer chats in plain English to search, cross-sell, and checkout; a clinic AI buyer
+                            autonomously detects shortages, substitutes drugs by active ingredient, and pays — zero human clicks.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Built a 3-state safety gate (DRAFT → PENDING → CONFIRMED) so payment is blocked until the order
+                                is explicitly confirmed — caught a ghost-order bug at 2am and fixed it before demo</li>
+                            <li>Engineered a 6-model LLM fallback chain (Qwen3, GPT-OSS, Groq Compound) with explicit rate-limit
+                                handling and a deterministic rule-engine last resort — zero crashes under repeated demo load</li>
+                            <li>Salt-level therapeutic substitution AI finds equivalent active-ingredient alternatives when a
+                                product is out of stock; full audit trail logs every money action to DB</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-pill">FastAPI</span>
+                            <span class="tech-pill">Streamlit</span>
+                            <span class="tech-pill">Groq API</span>
+                            <span class="tech-pill">Razorpay SDK</span>
+                            <span class="tech-pill">BM25</span>
+                            <span class="tech-pill">SQLAlchemy</span>
+                            <span class="tech-pill">PostgreSQL / SQLite</span>
+                            <span class="tech-pill">Agentic AI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/AyushPallod/PharmaBridge" target="_blank"
+                                class="project-link project-link-github">⚡ GitHub ↗</a>
+                            <a href="https://pharmabridge.streamlit.app/" target="_blank"
+                                class="project-link project-link-live">🚀 Live Demo ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. EDSR Thesis (was 1) -->
                 <div class="project-card reveal" data-category="research ai-mlops">
                     <div class="project-card-inner">
                         <div class="project-badge-row">
@@ -2015,6 +2060,7 @@
         const roles = [
             'production ML systems',
             'multi-agent RAG platforms',
+            'agentic commerce platforms',
             'LLM fine-tuning pipelines',
             'MLOps infrastructure',
             'quantitative engines',
